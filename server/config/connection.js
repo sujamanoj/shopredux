@@ -1,6 +1,7 @@
-const mongoose = require('mongoose');
+require("dotenv").config();
+const mongoose = require("mongoose");
 
-mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost:27017/shop', {
+mongoose.connect(process.env.DATABASE_URL || "mongodb://localhost:27017/shop", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
